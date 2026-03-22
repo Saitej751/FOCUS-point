@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -74,5 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 this is a exam resources app for different section of exams.
 which is included with ai chatbot.
 <br>
-Author - Yalla Saiteja
->>>>>>> f0b67cbee614d0c1a0d6c86a57899d6d9fafa459
+
