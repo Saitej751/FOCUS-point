@@ -1,0 +1,22 @@
+{
+  "short_name": "FocusPoint",
+  "name": "Focus Point - Exam Preparation Platform",
+  "description": "Focus Point is your one-stop platform for exam preparation. Access structured notes, study materials, calendar, chatbot, and notifications for all competitive exams.",
+  "icons": [
+    {
+      "src": "focus-point-icon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "focus-point-icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}

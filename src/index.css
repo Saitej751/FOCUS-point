@@ -1,0 +1,242 @@
+/* ---------------- General Reset ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937; /* slate-800 */
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2563eb; /* theme blue */
+  color: white;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* ---------------- Login & Auth ---------------- */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-buttons button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-buttons button:hover {
+  background: #1e40af; /* darker blue */
+}
+
+/* ---------------- Welcome & Splash ---------------- */
+.welcome-screen {
+  text-align: center;
+  margin-top: 20vh;
+  font-size: 1.5rem;
+}
+
+.loader {
+  margin: 20px auto;
+  border: 5px solid #e5e7eb;
+  border-top: 5px solid #2563eb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------------- Layout ---------------- */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-section {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.exams-sidebar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.exams-sidebar h2 {
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.exams-sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.exams-sidebar li {
+  margin-bottom: 10px;
+}
+
+.exams-sidebar a {
+  cursor: pointer;
+  color: #1f2937;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.exams-sidebar a:hover {
+  color: #2563eb;
+}
+
+/* ---------------- Gateway Column ---------------- */
+.gateway-column {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.gateway-column.expanded {
+  width: 100%;
+}
+
+.gateway-column h2 {
+  margin-bottom: 15px;
+  color: #2563eb;
+}
+
+.gateway-column p {
+  margin-bottom: 10px;
+}
+
+/* ---------------- Notifications ---------------- */
+.notifications-box {
+  background: #fef9c3; /* light yellow */
+  border: 1px solid #facc15; /* yellow-400 */
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.notifications-box h2 {
+  margin-bottom: 10px;
+  color: #ca8a04; /* yellow-600 */
+  font-size: 1rem;
+}
+
+.notifications-box ul {
+  list-style: none;
+}
+
+.notifications-box li {
+  margin-bottom: 6px;
+}
+
+/* ---------------- Content Area ---------------- */
+.content-area {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.content-area h2 {
+  margin-bottom: 10px;
+  color: #2563eb;
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #1e293b; /* dark slate */
+  color: white;
+  font-size: 0.85rem;
+}

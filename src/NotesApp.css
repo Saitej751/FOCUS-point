@@ -1,0 +1,110 @@
+.notes-app {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+.folder-create input,
+.note-create input {
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.folder-create button,
+.note-create button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.folder-create button:hover,
+.note-create button:hover {
+  background: #45a049;
+}
+
+.folders-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.folder-name {
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+}
+
+.active-folder {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.notes-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.notes-list li {
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.active-note {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+/* Editor */
+.editor {
+  flex: 2;
+}
+
+.editor textarea {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.save-btn,
+.rename-btn {
+  padding: 8px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.save-btn {
+  background: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #45a049;
+}
+
+.rename-btn {
+  background: #ff9800;
+  color: white;
+  margin-left: 10px;
+}
+
+.rename-btn:hover {
+  background: #e68a00;
+}

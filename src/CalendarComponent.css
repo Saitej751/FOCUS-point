@@ -1,0 +1,60 @@
+/* ---------------- Calendar Container ---------------- */
+.my-calendar {
+  width: 100% !important;
+  max-width: 700px;
+  font-size: 1.2rem;
+}
+
+/* ---------------- Calendar Tiles ---------------- */
+.my-calendar .react-calendar__tile {
+  height: 80px;
+  max-height: 80px;
+  font-size: 1.1rem;
+  position: relative; /* Needed for star positioning */
+}
+
+/* Today's date */
+.my-calendar .react-calendar__tile--now {
+  background: #d1e7dd !important;
+  border-radius: 9px;
+}
+
+/* Selected date */
+.my-calendar .react-calendar__tile--active {
+  background: #4CAF50 !important;
+  color: white !important;
+  border-radius: 9px;
+}
+
+/* ---------------- Star Marker for Deadlines/Events ---------------- */
+.my-calendar .star-marker {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: gold;
+  font-size: 20px;
+  pointer-events: none; /* So it doesn't block clicks */
+  transition: transform 0.2s, font-size 0.2s;
+}
+
+/* Optional hover effect for star */
+.my-calendar .react-calendar__tile:hover .star-marker {
+  transform: translateX(-50%) scale(1.2);
+  font-size: 22px;
+}
+
+/* ---------------- Optional: Saved notes list ---------------- */
+.saved-notes {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.saved-notes ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.saved-notes li {
+  margin-bottom: 5px;
+}
